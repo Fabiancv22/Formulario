@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <link rel="stylessheet" href="styles.css">
+ </head>
+  <body>
+    <div class="container">
+      <header class="header"> 
+       <h1 id="title" class="text-center">Contáctanos</h1>
+       <p id="description" class="description text-center">
+     Estás a un clic de comunicarte con nuestros asesores
+     <br>
+     <br>    
+     Tu opinión es muy importante para nosostros
+       </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group" >
+       <label id="name-label" for="name">Nombre</label> 
+     <input type="text" name="name" id="name" class="form-control" placeholder="Ingresa tu nombre" required>
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email-label">e-mail</label>
+        <input type="email" name="email"  id="email" class="form-control" placeholder="Ingresa tu e-mail" required>
+      </div>  
+       <div class="form-group"> 
+         <label id="number-label" for="number">Edad</label><span class="clue">(opcional)</span>
+         <input type="number" name="number" id="number" min="10" max="99" class="form-control" placeholder="Edad">
+       </div>
+       <div class="form-group">
+         <label id="city" for="city">Ciudad donde se localiza tu proyecto</label>
+         <input type="text" name="city" class="form-control" placeholder="Ciudad" required>
+       </div>
+       <div class="form-group">
+         <p>¿Qué opción describe mejor tú proyecto?</p>
+       <select id="dropdown" name="project" class="form-control" required>
+         <option disabled selected value>Selecciona tu tipo de proyecto...</option>
+         <option value="vivienda urbana">Vivienda Urbana</option>
+         <option value="vivienda rural">Vivienda Rural</option>
+         <option value="proyecto comercial">Proyecto de uso Comercial</option>
+         <option value="proyecto institucional">Proyecto de uso Institucional</option>
+     </select>
+     </div>
+       <div class="form-group">
+         <p>Etapa de tu proyecto</p>
+         <label>
+           <input name="cotizacion" value="cotizacion" type="radio" class="input-radio" checked>Cotización/Planificación</Label>
+        <br>
+         <label>
+           <input name="cotizacion" value="reforma" type="radio" class="input-radio">Reforma/Intervención Espacial</label> 
+          <br>
+          <label>
+            <input name="cotizacion" value="direccion" type="radio" class="input-radio">Dirección/Residencia de Obra</label>            
+       </div>
+       <div class="form-group">
+         <p>Nos conociste por medio de...</p>
+         <label>
+           <input name="referencia"
+            value="amiliar"
+            type="checkbox"
+            class="input-checkbox">Un Conocido</label>
+            <br>
+         <label>
+           <input name="referencia"
+            value="redes" 
+            type="checkbox"
+            class="input-checkbox">Redes Sociales</label>
+            <br>
+         <label>
+           <input name="referencia"
+            value="web" 
+            type="checkbox"
+            class="input-checkbox">Nuestra página Web</label>
+         <div class="form-group">
+           <p>Cuentanos más acerca de tu proyecto, ó dejanos tu opinión.</p>
+         <textarea id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Escribenos aquí..."></textarea>
+          </div>
+          <div class="form-group">
+           <button type="submit" id="submit" class="submit-button">Enviar</button>
+          </div>
+    </form>
+    </div>
+  </body>
+ </html>  
